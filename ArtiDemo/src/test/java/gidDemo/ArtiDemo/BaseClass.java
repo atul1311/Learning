@@ -36,6 +36,10 @@ public class BaseClass {
 		FileUtils.copyFile(srcFile, new File("C:\\Users\\ebsadmin\\Desktop\\Screen\\destination\\" + snapName + ".jpg"));
 	}
 	
+	public static void deleteCookies() {
+		driver.manage().deleteAllCookies();
+	}
+	
 	public static void quitBrowser() {
 		driver.quit();
 	}
